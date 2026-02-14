@@ -25,7 +25,6 @@ func main() {
 	}
 	problems := parseLines(lines)
 	timer := time.NewTimer(time.Duration(*timeLimit) * time.Second)
-	<-timer.C
 
 	correct := 0
 	for i, p := range problems {
